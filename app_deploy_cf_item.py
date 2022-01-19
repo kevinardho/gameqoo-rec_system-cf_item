@@ -6,8 +6,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 import pickle
 import requests
 
-from app import rec_collaborative_filtering_by_user
-
 # item-to-item collaborative filtering
 with open('item_item_sim_matrix.pkl', 'rb') as f:
     item_item_sim_matrix = pickle.load(f)
